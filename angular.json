@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AdminPortal-ClientApp"
+    }
+  },
+  "defaultProject": "AdminPortal-ClientApp",
+  "cli": {
+    "analytics": false
+  }
 }
