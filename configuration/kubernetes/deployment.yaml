@@ -12,7 +12,7 @@ spec:
     metadata: 
      labels:
        app: adminportalweb
-  sepc:
+  spec:
     containers: 
     - name: adminportalweb
       image: darshanadinushal/adminportalclientapp
