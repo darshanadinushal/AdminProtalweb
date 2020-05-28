@@ -28,5 +28,5 @@ spec:
   selector: 
     app: adminportalweb
   ports:
-  - port: 8000
+    - port: 8000
   type: LoadBalancer
