@@ -12,12 +12,12 @@ spec:
     metadata: 
      labels:
        app: adminportalweb
-  spec:
-    containers: 
-    - name: adminportalweb
-      image: darshanadinushal/adminportalclientapp
-      ports:
-      - containerPort: 8000 
+    spec:
+      containers: 
+      - name: adminportalweb
+        image: darshanadinushal/adminportalclientapp
+        ports:
+        - containerPort: 8000 
 
 ---
 apiVersion: v1
