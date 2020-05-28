@@ -46,8 +46,8 @@ stages:
       vmImage: 'ubuntu-latest'
     steps: 
     - script: |
-        echo 1 >  "$(System.ArtifactsDirectory)"
-        echo 2 > "$(System.ArtifactsDirectory)/manifests"
+        echo 1 >  "ArtifactsDirectory = $(System.ArtifactsDirectory)"
+        echo 2 > " manifestslocation: $(System.ArtifactsDirectory)/manifests"
     - task: DownloadPipelineArtifact@2
       inputs:
         buildType: 'current'
