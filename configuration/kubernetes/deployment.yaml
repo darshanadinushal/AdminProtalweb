@@ -23,10 +23,17 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-    name: adminportal-Service
-spec: 
-  selector: 
-    app: adminportalweb
+  labels: #PODS
+    app: adminportal-Service
+  name: adminportal-Service
+  namespace: default
+spec:
   ports:
-    - port: 8000
+  - # nodePort: 30702 #CHANGE
+    port: 8000 #CHANGE
+    protocol: TCP
+    targetPort: 8000 #CHANGE
+  selector:
+    app: adminportalweb
+  sessionAffinity: None #CHANGE
   type: LoadBalancer
