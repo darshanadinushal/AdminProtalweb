@@ -26,8 +26,7 @@ metadata:
     name: adminportal-Service
 spec: 
   selector: 
-    matchLabels:
-      app: adminportalweb
+    app: adminportalweb
   ports:
   - port: 8000
   type: LoadBalancer
