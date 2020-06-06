@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, Validators, FormGroup } from '@angular/forms';
 import { CountryService, Country, State, User } from '../service/country.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -15,7 +16,7 @@ import { CountryService, Country, State, User } from '../service/country.service
     sateList : State[] =[];
     user : User ;
 
-    constructor(private fb: FormBuilder , private countryService: CountryService){
+    constructor(private fb: FormBuilder , private countryService: CountryService ,private router: Router){
 
     }
 
@@ -69,9 +70,10 @@ import { CountryService, Country, State, User } from '../service/country.service
        };
      
   
-       this.countryService.saveUser(this.user).subscribe(values => {
-        if(values.data){
-           debugger;
+       this.countryService.saveUser(this.user).subscribe(data => {
+        if(data){
+          localStorage.setItem("userProfile", JSON.stringify(data));
+          this.router.navigate(['signup-details'])
         }
     });
 
