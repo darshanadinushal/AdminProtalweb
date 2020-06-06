@@ -1,0 +1,62 @@
+
+{ "data": {
+    "country":[
+    {
+      "id": "1",
+      "name": "Singapore",
+      "code": "SIN",
+       "state" : [
+           {
+               "id" :1 ,
+               "name" : "Bukit Batok"
+           },
+           {
+            "id" :2 ,
+            "name" : "Hougang"
+           },
+           {
+            "id" :3 ,
+            "name" : "Tampines"
+        }
+       ]
+    },
+    {
+        "id": "2",
+        "name": "UK",
+        "code": "Uk",
+         "state" : [
+             {
+                 "id" :1 ,
+                 "name" : "UK1"
+             },
+             {
+              "id" :2 ,
+              "name" : "UK2"
+             },
+             {
+              "id" :3 ,
+              "name" : "UK3"
+          }
+         ]
+      },
+      {
+        "id": "3",
+        "name": "Japan",
+        "code": "JP",
+         "state" : [
+             {
+                 "id" :1 ,
+                 "name" : "Japan1"
+             },
+             {
+              "id" :2 ,
+              "name" : "Japan2"
+             },
+             {
+              "id" :3 ,
+              "name" : "Japan3"
+          }
+         ]
+      }
+  ]}
+}
